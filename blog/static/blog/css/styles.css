@@ -1,0 +1,335 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1.25rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Main content styles */
+main {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1.25rem 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Profile page styles */
+.container {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.profile-info {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.profile-picture {
+  max-width: 9.375rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bio {
+  margin-top: 0.625rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 36.25rem) {
+  /* Responsive styles for larger screens */
+  main {
+      padding: 1.875rem;
+  }
+
+  .profile-picture {
+      max-width: 12.5rem;
+  }
+
+  .bio {
+      font-size: 1.2rem;
+  }
+}
+
+/* Blog Post List Styles */
+.container {
+  padding: 2rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Pagination Styles */
+.pagination {
+  margin-top: 1.25rem;
+}
+
+.step-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.step-links a {
+  padding: 0.3125rem 0.625rem;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.step-links a:hover {
+  background-color: #f4f4f4;
+  border-radius: 0.3125rem;
+}
+
+.current-page {
+  padding: 0.3125rem 0.625rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.post-details {
+  color: #888888; /* Light grey text color */
+}
+
+/* Custom CSS for the search bar */
+.search-input {
+  /* Input field styles */
+  width: 80%; /* Adjust the width as needed */
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  outline: none; /* Remove the input field outline */
+}
+
+.search-button {
+  /* Button styles */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  padding: 0.625rem 1.25rem; /* Adjust padding as needed */
+  font-size: 1rem; /* Button text size */
+}
+
+/* Hover effect for the button */
+.search-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Custom CSS for the search bar form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust styles for responsiveness as needed */
+@media (max-width: 768px) {
+  .search-form {
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+
+  .search-input {
+      width: 80%;
+  }
+
+  .search-button {
+      width: 80%;
+  }
+}
+
+
+.custom-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* form css */
+/* CSS for Create/Edit Post Form */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333; /* Text color */
+}
+
+form {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form fields */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Style for the Save button */
+form button[type="submit"] {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Button text size */
+}
+
+/* Hover effect for the Save button */
+form button[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Adjust styles for responsiveness as needed */
+@media (max-width: 768px) {
+  form {
+      padding: 30px;
+  }
+}
+
+
+/* Adjust styles for responsiveness as needed */
+@media (max-width: 48rem) {
+  .search-input {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 36.25rem) {
+  /* Responsive styles for smaller screens */
+  nav ul {
+      text-align: center;
+      margin-top: 0.625rem;
+  }
+
+  nav ul li {
+      display: block;
+      margin-bottom: 0.625rem;
+  }
+
+  .profile-picture {
+      max-width: 6.25rem;
+  }
+
+  .bio {
+      font-size: 0.9rem;
+  }
+}

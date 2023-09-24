@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div class="container-fluid h-100" style="padding-top: 10%;">
+    <div class="row justify-content-center align-items-center h-100" style="width: 100%;">
+        <div>
+            <h2 style="text-align: center; color: rgb(8, 8, 8);">Login</h2>
+            {% if message %}
+                <div class="thisisaliceblue" style="color: rgb(41, 122, 192);">{{ message }}</div>
+            {% endif %}
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input class="form-control form-control-lg" placeholder="Email or Username" name="userinput" type="text">
+                </div>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" placeholder="Password" name="password" type="password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit">Login</button>
+                </div>
+            </form>
+            <p style="text-align: center; color: aliceblue;">Don't have an account? <a style="color: aliceblue;" href="{% url 'signup' %}">Register here.</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

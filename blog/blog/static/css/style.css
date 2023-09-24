@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.bluebutton {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    height: 30px;
+    padding: 2px;
+    position: absolute;
+    margin: 164px;
+    width: 177px;
+    margin-left: 114px;
+  }
+  
+  #listings{
+    background-color: #DCDCDC;
+    margin-left: 1%;
+    margin-top:4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card:hover .buttons {
+    opacity: 1;
+  }
+  
+  .card:hover .weight {
+    margin-top: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+    z-index: 2;
+    overflow: hidden;
+  }
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    position: absolute;
+  }
+  
+  @media only screen and (min-width: 584px) {
+    .card-body {
+      display: flex;
+    }
+    .card {
+      width: 75vw;
+    }
+    .yoloyoloyolo {
+      display: flex;
+      justify-content: center;
+      height: 25vh;
+    }
+    .indexdivimage {
+      height: 100%;
+      margin-left: 5%;
+      width: 20%;
+    }
+    .img-fluid {
+      min-height: 100%; 
+      max-height: 100%; 
+      width: 100%
+    }
+    .infoforlisting{
+      padding-left: 7%; 
+      width: 50%
+    }
+    .pricing{
+      display: grid;
+      width: 100%;
+      justify-content: flex-end;
+      position: absolute;
+      height: 10vh;
+      padding-top:5%;
+      padding-right: 8%;
+    }
+    .buttonview{
+      padding-left: 20px;
+    }
+    .blockquote-footer{
+      max-height: 100%;
+    }
+  }
+  @media only screen and (max-width: 584px) {
+    .card-body {
+      display: flex;
+      width: 100%;
+    }
+    .card {
+      width: 100vw;
+    }
+    .yoloyoloyolo {
+      display: flex;
+      justify-content: center;
+      height: 23vh;
+    }
+    .indexdivimage {
+      height: 100%;
+      width: 30%;
+      display: flex;
+      justify-content: flex-start;
+    }
+    
+    .img-fluid {
+      height: 100%; 
+      width: 100%
+    }
+    .infoforlisting{
+      display: grid;
+      height: 100%;
+      width: 150px;
+      padding-left: 7%; 
+      justify-content: center;
+    }
+    .pricing{
+      display: grid;
+      justify-content: flex-end;
+      position: absolute;
+      height: 10vh;
+      width: 100%;
+      padding-top:10%;
+      padding-right: 8%;
+  
+    }
+    h3{
+      font-size:1.2em;
+    }
+    .buttonview{
+      width: 15px;
+      height: 10px;
+    }
+    .blockquote-footer{
+      max-height: 100%;
+    }
+  }
+  
+  .textaligncenter {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+  }
+  label{
+    color: aliceblue;
+  }
+  
+  body{
+    background-color: #212529!important;
+  }
+  
+  .thisisalicebluehcolor{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+  }
+  .thisisaliceblue{
+    color: aliceblue;
+    font-weight: 800;
+    
+  }
+  
+  .input-group{
+    margin:0px auto;
+   }
+  
+   .cover-container {
+    max-width: 42em;
+  }
